@@ -3,12 +3,42 @@
  */
 package TodoApp;
 
+import controller.ProjectController;
+import controller.TaskController;
+import java.sql.Connection;
+import java.util.Date;
+import java.util.List;
+import model.Project;
+import model.Task;
+import util.ConnectionFactory;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
+        //ProjectController projectController = new ProjectController();
+        
+        //Project project = new Project();
+        //project.setName("Projeto Teste");
+        //project.setDescription("Descrição");
+        //projectController.save(project);
+        
+        //project.setName("Nome alterado");
+        //projectController.update(project);
+        
+        //List<Project> projects = projectController.getAll();
+        //System.out.println("Total de projetos = " + projects.size());
+        
+        
+        //TaskController taskController = new TaskController();
+        //Task task = new Task();
+        //task.setIdProject(2);
+        //task.setName("Primeira tarefa");
+        //task.setDescription("Descrição da primeira tarefa");
+        //task.setNotes("Nota da primeira tarefa");
+        //task.setIsCompleted(false);
+        //task.setDeadline(new Date());
+        //taskController.save(task);
+
     }
 }

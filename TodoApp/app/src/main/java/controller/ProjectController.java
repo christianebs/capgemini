@@ -17,10 +17,7 @@ public class ProjectController {
     
     public void save(Project project){
     
-        String sql = "INSERT INTO projects (name"
-                + "description"
-                + "createdAt"
-                + "updateAt) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO projects(name, description, createdAt, updatedAt) VALUES (?, ?, ?, ?)";
         
         Connection connection = null;
         PreparedStatement statement = null;
@@ -32,14 +29,14 @@ public class ProjectController {
         statement = connection.prepareStatement(sql);
         //Setando os valores do statement
         statement.setString(1, project.getName());
-        statement.setString(2, project.getName());
-        statement.setDate(3, new Date(project.getCreatedAt().getTime()));
-        statement.setDate(4, new Date(project.getUpdateAt().getTime()));
+        statement.setString(2, project.getDescription());
+        statement.setDate(3,new Date(project.getCreatedAt().getTime()));
+        statement.setDate(4, new Date(project.getUpdatedAt().getTime()));
         //Executando a query
         statement.execute();
         } catch (Exception ex){
-            throw new RuntimeException("Erro ao salvar a tarefa"
-                    + ex.getMessage(), ex);
+            throw new RuntimeException("Erro ao salvar o projeto "
+                    + ex.getMessage());
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
@@ -47,12 +44,7 @@ public class ProjectController {
     
     public void update(Project project){
         
-        String sql = "UPDATE projects SET "
-                + "name = ?"
-                + "description = ?"
-                + "createdAt = ?"
-                + "updateAt = ?"
-                + "WHERE id = ?";
+        String sql = "UPDATE projects SET name = ?,"+ "description = ?,"+ "createdAt = ?,"+ "updatedAt = ? WHERE id=?";
         
         Connection connection = null;
         PreparedStatement statement = null;
@@ -65,14 +57,16 @@ public class ProjectController {
         //Setando os valores do statement
         statement.setString(1, project.getName());
         statement.setString(2, project.getDescription());
-        statement.setDate(3, new Date(project.getCreatedAt().getTime()));
-        statement.setDate(4, new Date(project.getUpdateAt().getTime()));
+        statement.setDate(3,new Date(project.getCreatedAt().getTime()));
+        statement.setDate(4, new Date( project.getUpdatedAt().getTime()));
         statement.setInt(5, project.getId());
         //Executando a query
         statement.execute();
         } catch (Exception ex){
-            throw new RuntimeException("Erro ao atualizar a tarefa"
+            throw new RuntimeException("Erro ao atualizar o projeto "
                     + ex.getMessage(), ex);
+        }finally{
+            ConnectionFactory.closeConnection(connection, statement);
         }
     }
     
@@ -93,7 +87,7 @@ public class ProjectController {
         //Executando a query
         statement.execute();
         } catch (Exception ex){
-            throw new RuntimeException("Erro ao deletar a tarefa"
+            throw new RuntimeException("Erro ao deletar o projeto "
                     + ex.getMessage(), ex);
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
@@ -104,11 +98,12 @@ public class ProjectController {
     public List<Project> getAll(){
                 
         String sql = "SELECT * FROM projects";
-        Connection connection = null;
-        PreparedStatement statement = null;
-        ResultSet resultSet = null;
         
         List<Project> projects = new ArrayList<>();
+        
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;     
         
         try {
         //Estabelecendo a conexao com o DB
@@ -123,16 +118,16 @@ public class ProjectController {
             Project project = new Project();
             
             project.setId(resultSet.getInt("id"));
-            project.setName(resultSet.getString("name"));
-            project.setDescription(resultSet.getString("description"));
-            project.setCreatedAt(resultSet.getDate("createdAt"));
-            project.setUpdateAt(resultSet.getDate("updateAt"));
+               project.setName(resultSet.getString("name"));
+               project.setDescription(resultSet.getString("description"));
+               project.setCreatedAt(resultSet.getDate("createdAt"));
+               project.setUpdatedAt(resultSet.getDate("updatedAt"));
             
             projects.add(project);
         }
         
         } catch (Exception ex){
-            throw new RuntimeException("Erro ao inserir projeto"
+            throw new RuntimeException("Erro ao buscar os projetos "
                     + ex.getMessage(), ex);
         } finally {
             ConnectionFactory.closeConnection(connection, statement, resultSet);
