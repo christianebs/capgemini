@@ -14,6 +14,8 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 import model.Project;
 import model.Task;
+import util.ButtonColumnCellRenderer;
+import util.DeadlineColumnCellRenderer;
 import util.TaskTableModel;
 
 /**
@@ -30,10 +32,11 @@ public class MainScreen extends javax.swing.JFrame {
     
     public MainScreen() {
         initComponents();
-        decorateTableTask();
-        
+                
         initDataController();
         initComponentsModel();
+        
+        decorateTableTask();
     }
 
     /**
@@ -353,7 +356,6 @@ public class MainScreen extends javax.swing.JFrame {
         taskDialogScreen.setVisible(true);
         
         taskDialogScreen.addWindowListener(new WindowAdapter() {
-        
             public void windowClosed(WindowEvent e){
                 int projectIndex = jListProjects.getSelectedIndex();
                 Project project = (Project) projectsModel.get(projectIndex);
@@ -375,7 +377,7 @@ public class MainScreen extends javax.swing.JFrame {
         int columnIndex = jTableTasks.columnAtPoint(evt.getPoint());
         Task task = taskModel.getTasks().get(rowIndex);
          
-        switch (columnIndex){
+        switch(columnIndex){
             case 3 :
                 taskController.update(task);
                 break;
@@ -455,8 +457,15 @@ public class MainScreen extends javax.swing.JFrame {
         jTableTasks.getTableHeader().setBackground(new Color(0,153,102));
         jTableTasks.getTableHeader().setForeground(new Color(255,255,255));
         
+        jTableTasks.getColumnModel().getColumn(2).setCellRenderer(new DeadlineColumnCellRenderer());
+        
+        jTableTasks.getColumnModel().getColumn(4).setCellRenderer(new ButtonColumnCellRenderer("edit"));
+        jTableTasks.getColumnModel().getColumn(5).setCellRenderer(new ButtonColumnCellRenderer("delete"));
+        
+        
         //Criando um sort automático para as colunas da table
-        jTableTasks.setAutoCreateRowSorter(true);
+        //jTableTasks.setAutoCreateRowSorter(true);
+
     }
     
     public void initDataController(){
@@ -491,7 +500,7 @@ public class MainScreen extends javax.swing.JFrame {
             if (jPanelEmptyList.isVisible()) {
                 jPanelEmptyList.setVisible(false);
                 jPanel5.remove(jPanelEmptyList);
-                
+            }
                 jPanel5.add(jScrollPaneTasks);
                 jScrollPaneTasks.setVisible(true);
                 jScrollPaneTasks.setSize(jPanel5.getWidth(), jPanel5.getHeight());
@@ -499,12 +508,10 @@ public class MainScreen extends javax.swing.JFrame {
                 if (jScrollPaneTasks.isVisible()) {
                     jScrollPaneTasks.setVisible(false);
                     jPanel5.remove(jScrollPaneTasks);
-                }
-                
+            }
                 jPanel5.add(jPanelEmptyList);
                 jPanelEmptyList.setVisible(true);
                 jPanelEmptyList.setSize(jPanel5.getWidth(), jPanel5.getHeight());
-            }
         }
     }
     

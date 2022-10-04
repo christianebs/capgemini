@@ -16,7 +16,7 @@ import model.Task;
  */
 public class TaskTableModel extends AbstractTableModel {
     
-    String[] columns = {"Nome","Descrição","Prazo", "Tarefa concluída","Editar", "Excluir"};
+    String[] columns = {"Nome", "Descrição", "Prazo", "Tarefa concluída", "Editar", "Excluir"};
     List<Task> tasks = new ArrayList();
 
     @Override
@@ -34,7 +34,7 @@ public class TaskTableModel extends AbstractTableModel {
         return columns[columnIndex];
     }
     
-    public boolean isCellEditable (int rowIndex, int columnIndex){
+    public boolean isCellEditable(int rowIndex, int columnIndex){
         return columnIndex == 3;
     }
     
@@ -49,7 +49,7 @@ public class TaskTableModel extends AbstractTableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         
-        switch(columnIndex) {
+        switch(columnIndex){
             case 0:
                 return tasks.get(rowIndex).getName();
             case 1:
