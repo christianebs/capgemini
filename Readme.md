@@ -1,39 +1,48 @@
-# Todo App
-Projeto desenvolvido no curso de lógica de programação III da Capgemini by Start. É uma aplicação para o gerenciamento de projetos e tarefas envolvidas nesses projetos.
+# ✔️ Todo App 
 
-## Entidades:
-### Projeto
 
-Nome
-Descrição
-Tarefas
-Data de criação
-Data de atualização
+## Sobre o projeto
+ Projeto desenvolvido no curso de lógica de programação III da Capgemini by Start. Este programa realiza o gerenciamento de projetos e tarefas envolvidas nesses projetos.
 
-### Tarefa
 
-Nome
-Descrição
-Status
-Observações
-Tags
-Data de criação
-Data de atualização
+### Entidades:
 
-## Requisitos
-Permitir criar o Projeto;
-Permitir alterar o Projeto;
-Permitir deletar o Projeto;
-Permitir criar a Tarefa;
-Permitir alterar a Tarefa;
-Permitir deletar a Tarefa;
+* Projeto
+   * Nome
+   * Descrição
+   * Tarefas
+   * Data de criação
+   * Data de Atualização
 
-## Regras
-Não irá conter um sistema de login
-Não haverá o conceito de usuário
-Toda tarefá deve pertencer a um projeto
+* Tarefa
+   * Nome
+   * Descrição
+   * Status
+   * Observações
+   * Prazo
+   * Data de Criação
+   * Data de Atualização
+
+### Requisitos
+
+* Permitir criar o Projeto;
+* Permitir alterar o Projeto;
+* Permitir deletar o Projeto;
+
+* Permitir criar a Tarefa;
+* Permitir alterar a Tarefa;
+* Permitir deletar a Tarefa;
+
+### Regras de negócio
+ 
+* Não irá conter um sistema de login;
+* Não haverá o conceito de usuário;
+* Toda tarefá deve pertencer a um projeto;
 
 ## Tecnologias utilizadas
-Java
-  Java Swing
-MySQL
+
+* Java
+    * Java Swing
+* MySQL
+
+## Layout
