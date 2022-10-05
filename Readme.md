@@ -49,14 +49,14 @@
 
 <div align="center">
 
-![Tela-1](https://user-images.githubusercontent.com/108686840/194093605-f284c0b7-f1dd-4dc6-81f4-7353cf3548db.jpg width="700px")
+![Tela-1](https://user-images.githubusercontent.com/108686840/194093605-f284c0b7-f1dd-4dc6-81f4-7353cf3548db.jpg)
 
-![Tela-2](https://user-images.githubusercontent.com/108686840/194099102-22cdbc63-27e4-491e-aca9-70069d3e37cb.jpg width="700px")
+![Tela-2](https://user-images.githubusercontent.com/108686840/194099102-22cdbc63-27e4-491e-aca9-70069d3e37cb.jpg)
 
-![Tela-3](https://user-images.githubusercontent.com/108686840/194099105-31c5abc7-abe2-4d67-a2d1-2a359c3cf978.jpg width="700px")
+![Tela-3](https://user-images.githubusercontent.com/108686840/194099105-31c5abc7-abe2-4d67-a2d1-2a359c3cf978.jpg)
 
-![Tela-4](https://user-images.githubusercontent.com/108686840/194099107-7507333b-4e43-4d61-9060-1ccf17ad915b.jpg width="700px")
+![Tela-4](https://user-images.githubusercontent.com/108686840/194099107-7507333b-4e43-4d61-9060-1ccf17ad915b.jpg)
 
-![Tela-5](https://user-images.githubusercontent.com/108686840/194099108-1b319595-68b9-4993-9319-60df771108b1.jpg width="700px")
+![Tela-5](https://user-images.githubusercontent.com/108686840/194099108-1b319595-68b9-4993-9319-60df771108b1.jpg)
 
 </div>
