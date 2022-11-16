@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atributos</title>
+
+        <!-- JS -->
+
+        <script>
+
+            //Função
+            function alterarLink(){
+
+                //Obter o link
+                var link = document.getElementsByTagName("a")[0];
+
+                //Alterar o link
+                link.href = "http://www.globo.com";
+            }
+
+        </script>
+        
+    </head>
+    <body>
+
+        <a href="http://www.google.com">Clique aqui</a>
+        <button onclick="alterarLink()">Alterar Link</button>
+
+    </body>
+</html>
