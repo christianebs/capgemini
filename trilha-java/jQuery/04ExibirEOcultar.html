@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exibir e Ocultar</title>
+
+        <!-- jQuery -->
+        <script src="jquery-3.3.1.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            //Ao carregar o documento
+            $(document).ready(function(){
+
+                //Exibir
+                $("#exibir").click(function(){
+                    $("img").show();
+                })
+
+                //Ocultar
+                $("#ocultar").click(function(){
+                    $("img").hide();
+                })
+
+            });
+
+        </script>
+        
+    </head>
+    <body>
+
+        <button id="exibir">Exibir</button>
+        <button id="ocultar">Ocultar</button>
+        <br />
+        <img src="imagem.png">
+
+    </body>
+</html>

@@ -7,3 +7,4 @@
 - HTML
 - CSS
 - JavaScript
+- jQuery

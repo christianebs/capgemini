@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alterar Atributos</title>
+
+        <!-- jQuery -->
+        <script src="jquery-3.3.1.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            //Ao carregar o documento
+            $(document).ready(function(){
+
+                //Selecionar e alterar o elemento img
+                $("img").attr("width", "700");
+                $("img").attr("title", "Alterando o title via jQuery");
+
+            });
+
+        </script>
+        
+    </head>
+    <body>
+
+        <img src="imagem.png" width="100" title="imagem">
+    </body>
+</html>
