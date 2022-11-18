@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+button {
+    padding: 10px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: filter .3s ease-in-out;
+    display: block;
+    margin: 10px 0;
+}

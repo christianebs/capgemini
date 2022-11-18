@@ -1,0 +1,5 @@
+<h2>Aprofundando os conhecimentos em tamplates</h2>
+<img [src]="urlImagem" width="300">
+<p>Nome: {{ nome | uppercase}}</p>
+<p>Data de Nascimento : {{ dataNascimento | date:"dd/MM/yyyy" }}</p>
+<button (click)="mostrarDataNascimento()" type="button">Mostrar data de Nascimento</button>
