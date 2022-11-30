@@ -4,11 +4,11 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 30px;
 }
 
 .main-header__title {
-    font-size: 80px;
+    font-size: 72px;
     letter-spacing: -1.5px;
 }
 
@@ -46,7 +46,7 @@
 .container-menu {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     flex: 1;
 }
 
