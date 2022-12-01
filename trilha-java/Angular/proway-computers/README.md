@@ -1,3 +1,22 @@
+<span style="color:blue">ProWay</span><span style="color:orange">Computers</span>
+
+<h2>Sobre o projeto</h2>
+Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular da Capgemini by Start. 
+
+<h2>Tecnologias</h2>
+<a href="#"><img src="https://img.shields.io/badge/Visual_Studio_Code-0D1117?style=for-the-badge&logo=visual%20studio%20code&logoColor=CC6699"></a>
+
+<a href="#"><img src="https://img.shields.io/badge/Angular-0D1117?style=for-the-badge&logo=angular&logoColor=CC6699"></a>
+
+<a href="#"><img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=CC6699"></a>
+
+<a href="#"><img src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=CC6699"></a>
+
+- Font Awesome
+- Angular Material
+
+<h2>Layout</h2>
+
 # ProwayComputers
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
