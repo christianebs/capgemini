@@ -11,7 +11,7 @@ export class ProdutosService {
   constructor() { }
 
   getAll() {
-    return this.produtos
+    return this.produtos;
   }
 
   getOne(produtoId: number) {
