@@ -15,15 +15,15 @@ export class ProdutosComponent implements OnInit {
   constructor(
     private produtosService: ProdutosService,
     private route: ActivatedRoute
-  ){ }
+  ) { }
 
   ngOnInit(): void {
     const produtos = this.produtosService.getAll();
     this.route.queryParamMap.subscribe(params => {
-      const descricao = params.get("descricao")?.toLocaleLowerCase();
+      const descricao = params.get("descricao")?.toLowerCase();
 
       if (descricao) {
-        this.produtos = produtos.filter(produto => produto.descricao.toLocaleLowerCase().includes(descricao));
+        this.produtos = produtos.filter(produto => produto.descricao.toLowerCase().includes(descricao));
         return;
       }
       this.produtos = produtos;

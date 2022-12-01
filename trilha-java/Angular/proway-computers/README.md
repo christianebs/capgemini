@@ -1,4 +1,4 @@
-<h1>ng bu<span style="color:blue">ProWay</span><span style="color:orange">Computers</span></h1>
+<h1>ProWay Computers</h1>
 
 <h2>Sobre o projeto</h2>
 Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular da Capgemini by Start. 
@@ -11,9 +11,11 @@ Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular 
 <a href="#"><img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=CC6699"></a>
 <a href="#"><img src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=CC6699"></a>
 </p>
-<p>Font Awesome | Angular Material </p>
+<p align="center">Font Awesome | Angular Material </p>
 
 <h2>Layout</h2>
+
+<img width="1680" alt="proway-computers-tela-1" src="https://user-images.githubusercontent.com/108686840/204963818-abe7e6ea-c441-4ba6-a94f-e16724a639cd.png">
 
 # ProwayComputers
 
