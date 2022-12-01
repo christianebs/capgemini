@@ -1,4 +1,4 @@
-<span style="color:blue">ProWay</span><span style="color:orange">Computers</span>
+<h1> <span style="color:blue">ProWay</span><span style="color:orange">Computers</span></h1>
 
 <h2>Sobre o projeto</h2>
 Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular da Capgemini by Start. 
