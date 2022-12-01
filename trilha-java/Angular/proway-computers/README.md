@@ -1,9 +1,9 @@
-<h1>ProWay Computers</h1>
+<h1 align="center">ProWay Computers</h1>
 
-<h2 align="center"><img width="20px" src="https://user-images.githubusercontent.com/108686840/204969649-30d18cb4-bb5e-4b1b-9122-65788b7e5e81.png">Sobre o projeto</h2>
-Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular da Capgemini by Start. 
+<h2 align="center"><img width="20px" src="https://user-images.githubusercontent.com/108686840/204969649-30d18cb4-bb5e-4b1b-9122-65788b7e5e81.png"> Sobre o projeto</h2>
+<p align="center">Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular da Capgemini by Start. </p>
 
-<h2 align="center"><img width="20px" src="https://user-images.githubusercontent.com/108686840/204969349-3fe1a1a8-c94d-4565-ac43-50ca0d3c7a25.png">Tecnologias</h2>
+<h2 align="center"><img width="20px" src="https://user-images.githubusercontent.com/108686840/204969349-3fe1a1a8-c94d-4565-ac43-50ca0d3c7a25.png"> Tecnologias</h2>
 
 <p align="center">
 <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Visual_Studio_Code-0D1117?style=for-the-badge&logo=visual%20studio%20code&logoColor=CC6699"></a>
@@ -13,7 +13,7 @@ Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular 
 </p>
 <p align="center"><a href="https://fontawesome.com/">Font Awesome</a> | <a href="https://material.angular.io/">Angular Material</a> </p>
 
-<h2 align="center"><img width="20px" src="https://user-images.githubusercontent.com/108686840/204970174-29ec1d7d-8cf1-4157-913e-b1351dc4048a.png">Layout</h2>
+<h2 align="center"><img width="20px" src="https://user-images.githubusercontent.com/108686840/204970174-29ec1d7d-8cf1-4157-913e-b1351dc4048a.png"> Layout</h2>
 
 <img width="1680" alt="proway-computers-tela-1" src="https://user-images.githubusercontent.com/108686840/204963818-abe7e6ea-c441-4ba6-a94f-e16724a639cd.png">
 <img width="1680" alt="proway-computers-tela-2" src="https://user-images.githubusercontent.com/108686840/204968176-83141d8d-e8a9-4776-bd32-df034fa47d00.png">
