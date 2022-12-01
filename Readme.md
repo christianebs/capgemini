@@ -12,3 +12,4 @@
 <img src="https://img.shields.io/badge/jQuery-0D1117?style=for-the-badge&logo=jquery&logoColor=CC6699">
 <img src="https://img.shields.io/badge/Angular-0D1117?style=for-the-badge&logo=angular&logoColor=CC6699">
 </p>
+<p align="center">| Projeto ProWay Computers |</p>
