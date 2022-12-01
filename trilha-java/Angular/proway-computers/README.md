@@ -4,6 +4,7 @@
 Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular da Capgemini by Start. 
 
 <h2>Tecnologias</h2>
+<div align="center">
 <a href="#"><img src="https://img.shields.io/badge/Visual_Studio_Code-0D1117?style=for-the-badge&logo=visual%20studio%20code&logoColor=CC6699"></a>
 
 <a href="#"><img src="https://img.shields.io/badge/Angular-0D1117?style=for-the-badge&logo=angular&logoColor=CC6699"></a>
@@ -14,6 +15,7 @@ Plataforma e-commerce de produtos periféricos desenvolvido no curso de Angular 
 
 - Font Awesome
 - Angular Material
+</div>
 
 <h2>Layout</h2>
 
