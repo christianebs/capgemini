@@ -26,6 +26,7 @@ export class ProdutosComponent implements OnInit {
         this.produtos = produtos.filter(produto => produto.descricao.toLowerCase().includes(descricao));
         return;
       }
+      
       this.produtos = produtos;
     });
   }
